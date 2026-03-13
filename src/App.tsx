@@ -5,6 +5,12 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import FakeDetection from "./pages/FakeDetection.tsx";
+import PolicyAnalyser from "./pages/PolicyAnalyser.tsx";
+import PostPurchaseGuard from "./pages/PostPurchaseGuard.tsx";
+import ScamAlerts from "./pages/ScamAlerts.tsx";
+import PriceHistory from "./pages/PriceHistory.tsx";
+import RightsNotifications from "./pages/RightsNotifications.tsx";
 
 const queryClient = new QueryClient();
 
@@ -16,7 +22,12 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/fake-detection" element={<FakeDetection />} />
+          <Route path="/policy-analyser" element={<PolicyAnalyser />} />
+          <Route path="/post-purchase" element={<PostPurchaseGuard />} />
+          <Route path="/scam-alerts" element={<ScamAlerts />} />
+          <Route path="/price-history" element={<PriceHistory />} />
+          <Route path="/rights" element={<RightsNotifications />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
