@@ -1,73 +1,79 @@
-# Welcome to your Lovable project
+# Smart BIS Verification System
 
-## Project info
+A prototype web platform that helps detect **counterfeit electronic products** and enforce **Bureau of Indian Standards (BIS) compliance**.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Consumers can verify whether an electronic product is genuine by scanning a **QR code**, while regulators and manufacturers can monitor product authenticity through a centralized verification system.
 
-## How can I edit this code?
+This project was developed as part of the **Code for Consumer Rights Ideathon** to address safety risks caused by counterfeit electronics in India.
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+# Problem
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Counterfeit electronics such as **mobile chargers, lithium batteries, and duplicate components** are widely sold in markets across India.
 
-Changes made via Lovable will be committed automatically to this repo.
+These products often:
 
-**Use your preferred IDE**
+- Violate BIS safety standards
+- Cause electrical hazards or device damage
+- Mislead consumers with fake branding or certification numbers
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Consumers currently lack an **easy way to verify product authenticity before use**.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+# Solution
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+The **Smart BIS Verification System** provides a digital verification platform.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Each certified product contains a **unique QR code** linked to a product identity stored in a secure database.
 
-# Step 3: Install the necessary dependencies.
-npm i
+Consumers can scan the QR code to instantly verify:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- Manufacturer information
+- BIS certification status
+- Product model
+- Manufacturing batch
 
-**Edit a file directly in GitHub**
+The system also detects **counterfeit activity** when duplicated QR codes or invalid certifications are detected.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+# Key Features
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Product Verification
+Consumers scan a product QR code to check authenticity.
 
-## What technologies are used for this project?
+### BIS Certification Check
+The system validates whether the product complies with BIS standards.
 
-This project is built with:
+### Counterfeit Detection
+The platform detects suspicious products based on:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- QR code duplication
+- Invalid BIS certificate
+- Batch mismatch
 
-## How can I deploy this project?
+### Consumer Reporting
+Users can report suspected counterfeit products to regulators.
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+### Regulatory Monitoring
+Authorities can monitor counterfeit activity using analytics dashboards.
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+# Technology Stack
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+This web application is built using modern frontend technologies.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+| Layer | Technology |
+|------|------------|
+| Frontend | React |
+| Build Tool | Vite |
+| Language | TypeScript |
+| UI Framework | shadcn-ui |
+| Styling | Tailwind CSS |
+
+---
+
+# Project Structure
