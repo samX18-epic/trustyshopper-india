@@ -77,3 +77,128 @@ This web application is built using modern frontend technologies.
 ---
 
 # Project Structure
+
+project-root
+│
+├── src
+│ ├── components
+│ ├── pages
+│ ├── hooks
+│ ├── services
+│ └── App.tsx
+│
+├── public
+│
+├── package.json
+└── README.md
+
+
+---
+
+# Getting Started
+
+## 1 Clone the Repository
+
+
+git clone <YOUR_GIT_URL>
+
+
+---
+
+## 2 Navigate to the Project Directory
+
+
+cd <YOUR_PROJECT_NAME>
+
+
+---
+
+## 3 Install Dependencies
+
+
+npm install
+
+
+---
+
+## 4 Run the Development Server
+
+
+npm run dev
+
+
+The app will start with live reloading and instant preview.
+
+---
+
+# Using the Web Application
+
+Typical user flow:
+
+1. Consumer opens the application.
+2. User scans or enters a **product QR code**.
+3. The system verifies the product in the database.
+4. The application displays:
+
+✔ Genuine Product  
+or  
+⚠ Counterfeit Alert
+
+Users may also report suspicious products.
+
+---
+
+# BIS Standards Alignment
+
+The system supports verification of products compliant with BIS standards such as:
+
+| Product | Indian Standard | International Equivalent |
+|------|------|------|
+| IT Equipment Safety | IS 13252 | IEC 60950 |
+| Lithium-ion Batteries | IS 16046 | IEC 62133 |
+| Mobile Chargers | IS 13252 | IEC 62368 |
+
+---
+
+# Local Impact (Assam & Northeast India)
+
+The Northeast region faces unique supply chain challenges:
+
+- Informal electronics markets
+- Counterfeit imports
+- Limited consumer awareness of certification standards
+
+The Smart BIS Verification System helps by:
+
+- Allowing instant product authenticity checks
+- Improving consumer awareness
+- Helping regulators track counterfeit supply chains
+
+---
+
+# Future Improvements
+
+Possible enhancements include:
+
+- AI-based counterfeit packaging detection
+- Blockchain-based product certificates
+- Offline verification support for rural areas
+- Integration with BIS national compliance systems
+
+---
+
+# Ideathon Context
+
+This project was developed for the **Code for Consumer Rights Ideathon**, which challenges participants to design technology-driven solutions to enforce consumer protection regulations.
+
+The system aligns with the goals of:
+
+- Consumer safety
+- Regulatory enforcement
+- Digital verification of product standards
+
+---
+
+# License
+
+This project is developed as a prototype for educational and research purposes.
