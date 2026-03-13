@@ -76,25 +76,6 @@ This web application is built using modern frontend technologies.
 
 ---
 
-# Project Structure
-
-project-root
-│
-├── src
-│ ├── components
-│ ├── pages
-│ ├── hooks
-│ ├── services
-│ └── App.tsx
-│
-├── public
-│
-├── package.json
-└── README.md
-
-
----
-
 # Getting Started
 
 ## 1 Clone the Repository
